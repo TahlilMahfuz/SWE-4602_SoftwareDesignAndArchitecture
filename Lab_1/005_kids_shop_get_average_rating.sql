@@ -1,6 +1,5 @@
 use kids_shop;
 DELIMITER //
-
 CREATE PROCEDURE get_average_rating(
     IN p_product_id INT,
     OUT p_average_rating DOUBLE
@@ -30,3 +29,6 @@ DELIMITER ;
 
 call get_average_rating(1, @average_rating);
 select @average_rating;
+
+insert into change_log (applied_at, created_by, script_name, script_details)
+values (now(), 'Tahlil', '005_kids_shop_average_rating.sql', 'added procedure get_average_rating');

@@ -53,3 +53,6 @@ insert into customer (name) values ('tahlil');
 
 # insert employee
 insert into employee (employee_id, name, salary) values (1, 'tahlil', 1000);
+
+insert into change_log (applied_at, created_by, script_name, script_details)
+values (now(), 'Tahlil', '003_kids_shop_add_more_tables.sql', 'provided in the lab task');

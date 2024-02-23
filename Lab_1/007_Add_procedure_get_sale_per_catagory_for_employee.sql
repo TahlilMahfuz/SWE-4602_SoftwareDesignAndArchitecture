@@ -12,3 +12,6 @@ END //
 DELIMITER ;
 
 call get_sale_per_category(1);
+
+insert into change_log (applied_at, created_by, script_name, script_details)
+values (now(), 'Tahlil', '007_Add_Procedure_get_sale_per_category_for_employees', 'added procedure to get sale per category for employees');

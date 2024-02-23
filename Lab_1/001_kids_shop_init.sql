@@ -9,6 +9,8 @@ drop table vote;
 /*
 If you already have the database, do not run the next two lines
 */
+# drop database kids_shop;
+# drop database if exists kids_shop_reporting_db;
 create database kids_shop;
 use kids_shop;
 
@@ -40,5 +42,19 @@ begin
     where 1 = 1;
 end;//
 delimiter ;
+
+CREATE TABLE change_log (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    applied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    created_by VARCHAR(255),
+    script_name VARCHAR(255),
+    script_details varchar(255)
+);
+
+insert into change_log (applied_at, created_by, script_name, script_details)
+values (now(), 'Tahlil', '001_kids_shop_init.sql', 'provided in the lab task');
+
+
+
 
 

@@ -29,3 +29,6 @@ insert into vote(product_id, is_up_vote) values
 call recalculate_product_votes();
 
 select * from product;
+
+insert into change_log (applied_at, created_by, script_name, script_details)
+values (now(), 'Tahlil', '002_kids_shop_seed.sql', 'provided in the lab task');
