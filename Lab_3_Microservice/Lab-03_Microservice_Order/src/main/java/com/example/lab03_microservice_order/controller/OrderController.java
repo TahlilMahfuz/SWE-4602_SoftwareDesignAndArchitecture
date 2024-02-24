@@ -1,8 +1,9 @@
-package com.example.lab_3_orderservice.controller;
+package com.example.lab03_microservice_order.controller;
 
-import com.example.lab_3_orderservice.entity.Order;
-import com.example.lab_3_orderservice.service.OrderService;
-import com.example.lab_3_orderservice.valueObject.ResponseValueObject;
+import com.example.lab03_microservice_order.entity.Order;
+import com.example.lab03_microservice_order.service.OrderService;
+import com.example.lab03_microservice_order.valueObject.Product;
+import com.example.lab03_microservice_order.valueObject.ResponseValueObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

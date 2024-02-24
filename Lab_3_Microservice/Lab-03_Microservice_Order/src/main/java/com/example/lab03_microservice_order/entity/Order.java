@@ -1,4 +1,4 @@
-package com.example.lab_3_orderservice.valueObject;
+package com.example.lab03_microservice_order.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,18 +7,22 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
-@Document(collection = "employees")
+import java.util.Date;
+
+@Document(collection = "orders")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Employee {
+public class Order {
 
     @Id
     private String id;
     @Field
-    private String name;
+    private Date dateOfOrder;
     @Field
-    private String designation;
+    private String customerId;
     @Field
-    private double salary;
+    private String productId;
+    @Field
+    private String employeeId;
 }
