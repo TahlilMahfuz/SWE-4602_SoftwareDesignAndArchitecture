@@ -22,6 +22,7 @@ BEGIN
     SELECT average_rating INTO p_average_rating
     FROM product
     WHERE id = p_product_id;
+
 END //
 
 DELIMITER ;
