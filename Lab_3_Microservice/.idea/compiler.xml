@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="api-gateway" />
+        <module name="Lab_3-Microservice (2)" />
+        <module name="Lab_3-Microservice (1)" />
+        <module name="Lab-3_Employee-Service" />
+        <module name="Lab_3-Service-Registry" />
+        <module name="Lab-03_Microservice_Order" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Lab_3-Microservice" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Lab-03_Microservice_Order" options="-parameters" />
+      <module name="Lab-3_Employee-Service" options="-parameters" />
+      <module name="Lab_3-Microservice" options="-parameters" />
+      <module name="Lab_3-Microservice (1)" options="-parameters" />
+      <module name="Lab_3-Microservice (2)" options="-parameters" />
+      <module name="Lab_3-Service-Registry" options="-parameters" />
+      <module name="api-gateway" options="-parameters" />
+    </option>
+  </component>
+</project>
