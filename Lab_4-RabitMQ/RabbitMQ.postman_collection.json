@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "116a4756-e063-4f04-98c1-0b4bb9626a8f",
+		"name": "RabbitMQ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31015567"
+	},
+	"item": [
+		{
+			"name": "Bismillah",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"barger\",\r\n    \"qty\" : 2,\r\n    \"price\" : 500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8001/order/bismillah/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"order",
+						"bismillah",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
