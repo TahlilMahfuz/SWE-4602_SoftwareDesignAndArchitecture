@@ -1,4 +1,4 @@
-package com.example.orderservice;
+package com.example.inventoryservice;
 
 public class Constants {
     public static final String QUEUE = "rabbit_queue";

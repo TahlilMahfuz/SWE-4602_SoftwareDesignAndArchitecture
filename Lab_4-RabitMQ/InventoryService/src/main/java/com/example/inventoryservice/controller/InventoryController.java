@@ -1,9 +1,9 @@
 package com.example.inventoryservice.controller;
 
 
+import com.example.inventoryservice.Constants;
 import com.example.inventoryservice.entity.OrderStatus;
 import com.example.inventoryservice.entity.Product;
-import com.example.orderservice.Constants;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
